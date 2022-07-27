@@ -1,4 +1,6 @@
 // ignore_for_file: unnecessary_new
+import 'package:flutter_application_1/login.dart';
+
 import 'home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +12,14 @@ class MyApp extends StatelessWidget {
   MyApp({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext build) {
-    return MaterialApp(home: HomePage());
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      themeMode: ThemeMode.light,
+      darkTheme: ThemeData(brightness: Brightness.dark),
+      routes: {
+        "/": (context) => LoginPage(),
+        "/login": (context) => LoginPage()
+      },
+    );
   }
 }
