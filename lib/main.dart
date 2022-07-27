@@ -1,8 +1,9 @@
 // ignore_for_file: unnecessary_new
-import 'package:flutter_application_1/login.dart';
+import 'package:flutter_application_1/pages/login.dart';
+import 'package:flutter_application_1/routes/route.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'home_page.dart';
+import 'pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,13 +18,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       themeMode: ThemeMode.light,
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-        fontFamily: GoogleFonts.jetBrainsMono().fontFamily,
-      ),
+          primarySwatch: Colors.deepPurple,
+          fontFamily: GoogleFonts.jetBrainsMono().fontFamily,
+         ),
       darkTheme: ThemeData(brightness: Brightness.dark),
+      debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => LoginPage(),
-        "/login": (context) => LoginPage()
+        MyRoutes.home_page: (context) => HomePage(),
+        MyRoutes.login_page: (context) => LoginPage()
       },
     );
   }
