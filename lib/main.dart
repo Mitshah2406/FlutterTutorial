@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => LoginPage(),
+        // ignore: prefer_const_constructors
         MyRoutes.home_page: (context) => HomePage(),
         MyRoutes.login_page: (context) => LoginPage()
       },
