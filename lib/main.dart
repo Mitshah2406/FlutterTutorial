@@ -24,10 +24,10 @@ class MyApp extends StatelessWidget {
       ),
       darkTheme: ThemeData(brightness: Brightness.dark),
       debugShowCheckedModeBanner: false,
-    
+      initialRoute: "/",
       routes: {
         // ignore: prefer_const_constructors
-        MyRoutes.google_sign_in : (context) => Google(),
+        MyRoutes.google_sign_in: (context) => Google(),
         MyRoutes.home_page: (context) => HomePage(),
         MyRoutes.login_page: (context) => LoginPage()
       },
