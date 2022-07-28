@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "797248243303",
+    "project_id": "thecrazyentrepreneur-ad2e4",
+    "storage_bucket": "thecrazyentrepreneur-ad2e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797248243303:android:36c2e1252268c6f56f76c2",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797248243303-8naqihcd7hel2cgqhvrrsko36q81gnq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO8vOP1a9KV4w9x83TgJEVWBns0kcD6Bc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797248243303-8naqihcd7hel2cgqhvrrsko36q81gnq0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

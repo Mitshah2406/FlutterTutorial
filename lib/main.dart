@@ -1,4 +1,5 @@
 // ignore_for_file: unnecessary_new
+import 'package:flutter_application_1/pages/google.dart';
 import 'package:flutter_application_1/pages/login.dart';
 import 'package:flutter_application_1/routes/route.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -18,14 +19,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       themeMode: ThemeMode.light,
       theme: ThemeData(
-          primarySwatch: Colors.deepPurple,
-          fontFamily: GoogleFonts.jetBrainsMono().fontFamily,
-         ),
+        primarySwatch: Colors.deepPurple,
+        fontFamily: GoogleFonts.jetBrainsMono().fontFamily,
+      ),
       darkTheme: ThemeData(brightness: Brightness.dark),
       debugShowCheckedModeBanner: false,
+    
       routes: {
-        "/": (context) => LoginPage(),
         // ignore: prefer_const_constructors
+        MyRoutes.google_sign_in : (context) => Google(),
         MyRoutes.home_page: (context) => HomePage(),
         MyRoutes.login_page: (context) => LoginPage()
       },
