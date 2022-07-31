@@ -5,7 +5,7 @@ class MyTheme {
 
  static ThemeData  lightTheme(BuildContext context) => ThemeData(
   primarySwatch: Colors.deepPurple,
-  fontFamily: GoogleFonts.jetBrainsMono().fontFamily,
+  fontFamily: GoogleFonts.ubuntu().fontFamily,
   appBarTheme: AppBarTheme(
   color: Colors.white,
   elevation: 0.0,
